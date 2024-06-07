@@ -15,6 +15,7 @@ let isGoingRight = false
 let leftTimerId
 let rightTimerId
 let score = 0
+const startButton = document.getElementById('startButton');
 
 function createDoodler() {
     grid.appendChild(doodler)
@@ -178,6 +179,9 @@ function start() {
     }
     }
     //attach to button
+    startButton.addEventListener('click', () => {
+        startButton.style.display = 'none';
+    
     start()
-
+})
 })
